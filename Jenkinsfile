@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+    tool {
+        git "Default"
+    }
     
     stages{
         stage("Clone Code"){
